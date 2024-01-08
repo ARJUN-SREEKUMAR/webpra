@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script >
+//      Develop embedded JavaScript that displays the cube of the number with font -
+//      weight 400 and font-color green, entered through a prompt box?
+window.onload = function(a,sum) {
+    let x = prompt("Enter the number that you want to find the cube of");
+    let cu = Math.pow(x, 3);
+    document.getElementById('user').innerHTML = cu;
+}
+
+        
+    </script>
+    <style>
+
+        #user{
+            
+            font-weight: 400;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p id="user">
+        
+    </p>
+</body>
+</html>

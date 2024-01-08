@@ -1,0 +1,32 @@
+<!-- How are event handlers registered in JavaScript? Write the code for an HTML
+document with embedded JavaScript scripts, which initially displays a paragraph
+with text "Welcome" and a button titled "Click". When the button is clicked, the
+message "Hello from JavaScript" in bold should replace the paragraph text. -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handle()
+        {   
+            var x = document.getElementById("User");
+         counter++
+            // x.style.fontWeight = "bold";
+            if(x.innerHTML=="Hello from Javascript")
+            {
+                x.innerHTML="Welcome";
+            }else
+            {
+                x.innerHTML="Hello from Javascript";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="User">Welcome</p>
+    <button onclick="handle()">Click</button>
+</body>
+</html>

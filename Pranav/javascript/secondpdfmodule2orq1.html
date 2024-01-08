@@ -1,0 +1,32 @@
+<!-- Using   Javascript   function   validate an HTML form containing   textboxes for entering username,  password and a submit button. Validation should check the following criteria, if it’s not satisfied an alert must be given. • Username must not be blank 
+• Password must not be less than 6 characters  -->
+
+<html>
+    <head>
+        <title>Chumma</title>
+        <script>
+            
+function validate() { 
+                    var x = document.getElementById("uname");
+                    var y = document.getElementById("pword");
+                    if(x.value==null)
+                    {
+                        alert("Please enter username");
+                    }
+                    if(y.value.length<6)
+                    {
+                        alert("Please enter a paswword greater than 6 letters");
+                    }
+}
+        </script>
+    </head>
+    <body>
+        
+            <label>Username : </label>
+            <input type="text" name="uname" id="uname"></input><br><br>
+            <label>Password: </label>
+            <input type="password" name="pword" id="pword"></input><br><br>
+            <button onclick="validate()">Submit</button>
+       
+    </body>
+</html>

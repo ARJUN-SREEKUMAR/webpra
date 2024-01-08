@@ -1,0 +1,54 @@
+<!-- Write CSS and the corresponding HTML code for the following:  
+i. Set the background color for the hover and active link states to "green"  ii. Set the list style for unordered lists to "square".  
+iii. Set "Flower.png" as the background image of the page . iv. Set dashed border for left and right and double border for top & bottom of a table with 2 rows.   -->
+
+<html>
+    <head>
+        <title>Document 1</title>;
+        <style>
+            a:hover, a:active{
+                color: green;
+            }
+            ul{
+                list-style: square;
+            }
+            body{
+                background-image:url("boat.gif"); 
+            }
+            table{
+               
+                border-left:10px dashed;
+                border-right:10px dashed;
+                border-top:10px double;
+                border-bottom:10px double;
+            }
+            td, th{
+                border:1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com/">This is a link redirecting to google</a>
+        <ul>
+            <li>google</li>
+            <li>facebook</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Number</th>
+            </tr>
+            <tr>
+                <td>Pranav</td>
+                <td>21</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>Arjun</td>
+                <td>21</td>
+                <td>15</td>
+            </tr>
+        </table>
+    </body>
+</html>
